@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Headsets - PadZoneBR</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="menu">
+  <a href="../index.html">🏠 PadZoneBR</a>
+  <a href="../categorias/mouses.html">Mouses</a>
+  <a href="../categorias/teclados.html">Teclados</a>
+  <a href="../categorias/monitores.html">Monitores</a>
+  <a href="../categorias/headsets.html">Headsets</a>
+</nav>
+  <header>
+    <h1>Headsets</h1>
+    <p>Confira os melhores headsets custo-benefício de 2025</p>
+  </header>
+
+  <main id="lista-produtos">
+    
+  </main>
+
+  <footer>
+    <p>© 2025 PadZoneBR</p>
+  </footer>
+  <script src="js/produtos-headsets.js"></script>
+<script>
+  const container = document.getElementById("lista-produtos");
+
+  produtos.forEach(prod => {
+    const card = document.createElement("section");
+    card.className = "produto";
+
+    card.innerHTML = `
+      <h2>${prod.nome}</h2>
+      <img src="${prod.imagem}" alt="${prod.nome}">
+      <p>${prod.descricao}</p>
+      <p>R$ ${prod.preco.toFixed(2)}</p>
+      <a href="${prod.link}" target="_blank">Ver na Amazon</a>
+    `;
+
+    container.appendChild(card);
+  });
+</script>
+</body>
+</html>
