@@ -3,7 +3,7 @@ const produtos = [
     nome: "Fortrek H2 - Headset Gamer",
     imagem: "https://m.media-amazon.com/images/I/715099pgIPL._AC_SY450_.jpg",
     descricao: "Recomendado Para Gamers Que Buscam O Profissionalismo, Com Alças Flexíveis E Fones Acolchoados",
-    preco: 77.99,
+    preco: 102.90,
     link: "https://amzn.to/4k8gxxQ"
   },
   {
